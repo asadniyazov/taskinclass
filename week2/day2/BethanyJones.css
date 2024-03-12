@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.file{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 200px;
+}
+.card{
+    width: 800px;
+    height: 500px;
+    background-color: #ffebcd;
+    border: 2px solid mediumslateblue;
+}
+.nav{
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.contanier{
+    width: 600px;
+    height: 400px;
+    background: #ffebcd;
+    border: 1px solid grey;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+    /* margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 200px; */
+}
+.contex{
+    height: 400px;
+    width: 300px;
+}
+.picture{
+    height: 400px;
+    width: 300px;
+}
+.icons{
+    margin-top: 275px;
+    margin-left: 30px;
+}
