@@ -1,0 +1,18 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ .box1{
+    position: relative;
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+.box2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    transform: translate(50% ,50%);
+}
