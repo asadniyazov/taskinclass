@@ -10,7 +10,9 @@
     Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   border: none;
+  min-height: auto;
 }
+
 img {
   width: 100%;
 }
@@ -20,6 +22,7 @@ img {
 .nav__container__btn {
   display: none;
 }
+
 nav {
   /* background-color: rgb(44, 62, 80); */
   color: aliceblue;
@@ -27,13 +30,18 @@ nav {
   font-weight: bold;
   width: 100%;
 }
+
 header {
   display: flex;
   /* width: 100vw; */
   height: 100px;
   align-items: center;
   background-color: rgb(44, 62, 80);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
+
 .nav__container {
   display: flex;
   justify-content: space-between;
@@ -41,17 +49,21 @@ header {
   padding: 30px 140px;
   text-transform: uppercase;
 }
+
 .nav__container__h2 {
   font-size: 16px;
 }
+
 .nav__container__li {
   display: flex;
   gap: 15px;
 }
+
 @media screen and (max-width: 600px) {
   .nav__container__li {
     display: none;
   }
+
   .nav__container__btn {
     display: flex;
     justify-content: space-between;
@@ -62,10 +74,12 @@ header {
     border-radius: 7px;
     padding: 10px;
   }
+
   nav {
     justify-content: space-between;
   }
 }
+
 /* nav end */
 /* hero section start */
 .hero {
@@ -77,22 +91,26 @@ header {
   height: 600px;
   gap: 30px;
 }
+
 .hero__picture {
   width: 100%;
   height: 100%;
 }
+
 .hero__picture__1 {
   display: flex;
   justify-content: center;
   width: 240px;
   height: 250px;
 }
+
 h1 {
   font-weight: 700;
   padding: 20px;
   color: white;
   text-transform: uppercase;
 }
+
 .right__hr {
   border-radius: 3px;
   background-color: white;
@@ -101,10 +119,12 @@ h1 {
   height: 4px;
   margin: 0px 0px 0px 16px;
 }
+
 .star {
   font-size: 32px;
   color: white;
 }
+
 .left__hr {
   border-radius: 3px;
   background-color: white;
@@ -113,15 +133,18 @@ h1 {
   height: 4px;
   margin: 0px 16px 0px 0px;
 }
+
 .line__star__line {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .hero__p {
   color: white;
   margin-top: 15px;
 }
+
 /* hero section end */
 /* portfolio section start */
 .Portfolio {
@@ -129,16 +152,20 @@ h1 {
   flex-direction: column;
   align-items: center;
   background-color: white;
-  height: 886.22px;
+  min-height: 886px;
   gap: 30px;
   margin-top: 100px;
 }
+
 .Portfolio__h2 {
+  display: flex;
+  justify-content: center;
   font-weight: bold;
   text-transform: uppercase;
   padding: 20px;
   font-weight: 700;
-}
+ 
+
 .Portfolio__left__hr {
   border-radius: 3px;
   background-color: black;
@@ -147,29 +174,187 @@ h1 {
   height: 4px;
   margin: 0px 16px 0px 0px;
 }
-.Portfolio__star{
-    font-size: 32px;
-    letter-spacing: 2px;
+
+.Portfolio__star {
+  font-size: 32px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: -25px;
 }
-.Portfolio__rihgt__hr{
-    border-radius: 3px;
+
+.Portfolio__rihgt__hr {
+  border-radius: 3px;
   background-color: black;
   border: 1px solid black;
   width: 112px;
   height: 4px;
   margin: 0px 0px 0px 16px;
 }
-.Portfolio__picture__1{
-  border-radius: 5px;
+
+.Portfolio__line__star__line {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 5px;
+  top: -40px;
+}
+
+.Portfolio__picture__123 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.Portfolio__picture__456 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.card{
+ position: relative;
+}
+.overlay{
+ position: absolute;
+ background-color: #1abc9c;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ opacity: 0.7;
+ display: none;
+ justify-content: center;
+ align-items: center;
+ transition: all .5s ease;
+ color: white;
+ font-size: 100px;
+}
+.card:hover .overlay{
+  display: flex;
+}
+.Portfolio__picture {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 10px 10px 10px;
+}
+@media screen and (max-width:800px) {
+  .Portfolio{
+    display: flex;
+    flex-direction: column;
+  }
+  .Portfolio__picture__123{
+    display: flex;
+    flex-direction: column;
+  }
+  .Portfolio__picture__456{
+    display: flex;
+    flex-direction: column;
+  }
+  .Portfolio__h2{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 70px;
+  }
+}
+/* section about start */
+.about {
+  background-color: #1abc9c;
+  width: 100%;
+  min-height: 550px;
+}
+
+.about__header {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about__h2 {
+  display: flex;
+  justify-content: center;
+  font-weight: 700; 
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+}
+.about__line__star__line{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.about__left__hr{
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid white;
+  width: 112px;
+  height: 4px;
+  margin: 0px 29px 0px 0px;
 
 }
-.Portfolio__picture__123{
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
+.about__right__hr{
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid white;
+  width: 112px;
+  height: 4px;
+  margin: 0px 0px 0px 29px;
 }
-.Portfolio__picture__456{
+.about__star{
+  position: absolute;
+  top: -25px;
+  font-size: 32px;
+  color: white;
+}
+.about__text__container{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  justify-content: center;
+  font-size: 20px;
+}
+.about__text__context__1{
+  display: flex;
+  justify-content: center;
+  color:white;
+  margin:10px 6px 16px 200px;
+  width: 350px;
+}
+.about__text__context__2{
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin:10px 200px 16px 6px ;
+  width: 300px;
+}
+.about__div__button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.about__button{
+  padding: 20px;
+  border: 2px solid white;
+  background-color: #1abc9c;
+  border-radius: 6px;
+  color: white;
+}
+.about__button:hover{
+  background-color: white;
+  color:black;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  .about__text__container{
+    display: flex;
+    flex-direction: column;
+  }
+  .about__text__context__1{
+    display:flex;
+    margin: 0px 0px 0px 0px;
+  }
+  
 }
