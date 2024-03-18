@@ -1,46 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./asses.css">
-</head>
+    <link rel="stylesheet" href="./asses.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav__container">
-                <div class="nav__container__a">
-                    <a href="">Start Bootstrap</a>
-                </div>
-                <div class="nav__container__ul">
-                    <ul class="nav__container__li">
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <button class="nav__container__btn">
-                        MENU <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </nav>
+      <nav>
+        <div class="nav__container">
+          <div class="nav__container__a">
+            <a class="nav__a" href="">Start Bootstrap</a>
+          </div>
+          <div class="nav__container__ul">
+            <ul class="nav__container__li">
+              <li><a class="nav__a" href="#about">About</a></li>
+              <li><a class="nav__a" href="#projects">Projects</a></li>
+              <li><a class="nav__a" href="">Contact</a></li>
+            </ul>
+            <button class="nav__container__btn">
+              MENU <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="hero">
-            <div class="Grayscale__main">
-                <h1 class="Grayscale__h1">Grayscale</h1>
-                <h2 class="Grayscale__h2">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
-                <a href="" class="hero__button">GET STARTED</a>
+      <section class="hero">
+        <div class="hero__main">
+          <h1 class="hero__h1">Grayscale</h1>
+          <h2 class="hero__h2">
+            A free, responsive, one page Bootstrap theme created by Start
+            Bootstrap.
+          </h2>
+          <a href="#about" class="hero__button">GET STARTED</a>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="about__main">
+          <div class="about__text__container">
+            <h2 class="about__h2">Built with Bootstrap 5</h2>
+            <p class="about__p">
+              Grayscale is a free Bootstrap theme created by Start Bootstrap .
+              It can be yours right now, simply download the template on
+              <a class="about__a">the preview page</a>. The theme is open
+              source, and you can use it for any purpose, personal or
+              commercial.
+            </p>
+          </div>
+          <img
+            class="about__img"
+            src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/ipad.png"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="projects" class="projects">
+        <div class="projects__div">
+          <div class="projects1">
+            <img
+              class="projects1__img"
+              src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg"
+              alt=""
+            />
+            <div class="projects1__div">
+              <h4 class="projects1__h4">Shoreline</h4>
+              <p class="projects1__p">
+                Grayscale is open source and MIT licensed. This means you can
+                use it for any project - even commercial projects! Download it,
+                customize it, and publish your website!
+              </p>
             </div>
-        </section>
+          </div>
+          <div>
+            <div class="projects__row1">
+              <img
+                class="projects__row1__img"
+                src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/demo-image-01.jpg"
+                alt=""
+              />
+              <div class="projects__row1__div">
+                <h4 class="projects__row1__h4">Misty</h4>
+                <p class="projects__row1__p">
+                  An example of where you can put an image of a project, or
+                  anything else, along with a description.
+                </p>
+              </div>
+            </div>
+            <div class="projects__row2">
+              <div class="projects__row2__div">
+                <h4 class="projects__row2__h4">Mountains</h4>
+                <p class="projects__row2__p">
+                  Another example of a project with its respective description.
+                  These sections work well responsively as well!
+                </p>
+              </div>
+              <img
+                class="projects__row2__img"
+                src="https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/demo-image-02.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="sign_up">
+        <div class="sign_up__div">
+          <i class="fa-regular fa-paper-plane"></i>
+          <h2 class="sign_up__h2">Subscribe to receive updates!</h2>
+          <div class="sign-up__enter">
+            <input type="email" placeholder="Enter Email Adress ..." />
+            <button class="sign_up__button">Notify Me !</button>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact">
+        <div class="contact1">  <div class="contact__container">
+            <div class="card">
+              <div class="card__container">
+                <div class="card__text">
+                  <div class="card__icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                  <h4 class="card__h4">Adress</h4>
+                  <div class="card__hr"><hr /></div>
+                  <div class="card__p">4923 Market Street, Orlando FL</div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__container">
+                <div class="card__text">
+                  <div class="card__icon"><i class="fa-solid fa-envelope"></i></div>
+                  <h4 class="card__h4">Email</h4>
+                  <div class="card__hr"><hr></div>
+                  <div class="card__a"><a href="">hello@yourdomain.com</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card__container">
+                <div class="card__text">
+                  <div class="card__icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                  <h4 class="card__h4">Phone</h4>
+                  <div class="card__hr"><hr></div>
+                  <div class="card__p">+1 (555) 902-8832</div>
+                </div>
+              </div>
+            </div>
+          
+          </div></div>
+      
+        <div class="icons">
+            <a class="twitter" href=""><i class="fa-brands fa-twitter"></i></a>
+            <a class="facebook" href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a class="github" href=""><i class="fa-brands fa-github"></i></a>
+          </div>
+      </section>
     </main>
-</body>
-
+  </body>
 </html>
