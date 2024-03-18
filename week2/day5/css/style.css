@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  align-items: center;
+  background-color: gray;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */
