@@ -249,7 +249,7 @@ header {
 .projects__row2 {
   display: flex;
   flex-direction: row;
-}
+}w
 .projects__row2__p {
   max-width: 362px;
   min-height: 64px;
@@ -353,6 +353,9 @@ input {
   padding:0px 48px ;
   max-width: 1140px;
   height: 329.34px;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
 }
 .card{
   max-width: 364px;
@@ -415,9 +418,18 @@ justify-content: space-around;
   color:rgba(255, 255, 255, 0.5);
 }
 @media screen and (max-width:800px) {
-  .contact1{
-    display: flex;
-    flex-direction: column;
+  .contact{
+    display: block;
   }
 }
 /* contact section end */
+/* footer start */
+.Copyright{
+  background-color: #212529;
+  min-height: 181px;
+}
+.footer__div{
+  padding: 80px 0px;
+  text-align: center;
+}
+/* footer end */
