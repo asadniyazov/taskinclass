@@ -93,7 +93,7 @@ input{
     transition: 1s;
     outline: none;
   }
-  textarea{
+  textarea:focus{
     border-bottom: 3px solid aqua;
   }
   @media screen and (max-width:992px) {

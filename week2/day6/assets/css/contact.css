@@ -181,7 +181,7 @@ textarea {
   outline: none;
 }
 
-textarea {
+textarea:focus {
   border-bottom: 3px solid aqua;
 }
 
