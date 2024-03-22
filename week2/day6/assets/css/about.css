@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: none;
+}
+
+.nav__a {
+  margin: 0px 20px 0px 0px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.nav__a a {
+  color: white;
+}
+.nav__a a:hover {
+  color: gray;
+}
+
+.nav__a {
+  color: white;
+}
+
+.nav__ul {
+  max-width: 868px;
+  height: 66px;
+  padding: 10px 0px;
+}
+.nav__ul ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.nav__ul a {
+  color: white;
+}
+.nav__ul a:hover {
+  color: gray;
+}
+
+.hidden {
+  display: none;
+  height: 30px;
+  width: 70px;
+  color: rgba(0, 0, 0, 0.5019607843);
+  font-size: 10px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.hidden :hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+  .nav__container {
+    position: relative;
+    background-color: white;
+  }
+  .nav__container .nav__a {
+    color: black;
+  }
+  .nav__ul {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+  }
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.42), rgba(31, 22, 29, 0.43)), url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__div {
+  margin: 0px 24px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 5rem;
+  margin: 0px 0px 8px;
+}
+
+span {
+  font-size: 24px;
+  margin: 10px 0px 0px;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.middle {
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 520px;
+  font-size: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.middle__div {
+  max-width: 500px;
+  min-height: 120px;
+  margin: 0px 70px;
+}
+
+.middle__p {
+  margin: 32px 0px;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    width: 100%;
+  }
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px;
+  color: white;
+  gap: 10px;
+}
+
+.icon__div {
+  border-radius: 50%;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon__div:hover {
+  background-color: #0085a1;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.footer__p {
+  display: flex;
+  justify-content: center;
+  color: black;
+}/*# sourceMappingURL=about.css.map */

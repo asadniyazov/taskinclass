@@ -1,0 +1,26 @@
+.icon{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    color: white;
+    gap: 10px;
+}
+.icon__div{
+    border-radius: 50%;
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background-color: #0085a1;
+        cursor: pointer;
+        transition: 400ms;
+    }
+}
+.footer__p{
+    display: flex;
+    justify-content: center;
+    color: black;
+}

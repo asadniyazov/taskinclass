@@ -47,6 +47,7 @@
     width: 100%;
     padding: 30px 140px;
     text-decoration: none;
+    font-size: 16px;
   }
   
   .nav__a {
@@ -58,11 +59,96 @@
     display: flex;
     gap: 15px;}
     .nav__container__ul{
+      width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        font-size: 16px;
 
     }
-    .nav__icon{
+    .fa-solid{
+      color: pink;
+    }
+    // nav end
+    .hero{
+      padding-top: 60px;
+      height: 400px;
+      background-color: #fbc43c;
+      color: #111111;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero__h2{
+      font-size: 48px;
+      display: flex;
+      justify-content: center;
+      margin: 60px 433px 0px;
+      
+    }
+    .hero__p{
+      display: flex;
+      justify-content: center;
+      margin: 20px 261px 60px;
+      max-width: 600px;
+      min-height: 143px;
+      font-size: 16px;
 
     }
+    // hero section end
+    // middle section start
+    .middle{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      min-height: 571px;
+      padding-top: 60px;
+    }
+    .middle__img{
+      padding: 0px 22px;
+      width: 570px;
+      height: 511px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .middle__img__div{
+     margin: 0px 20px;
+     background-image:url(https://assets.nicepagecdn.com/11a8ddce/6171861/images/adorable-jack-russell-retriever-puppy-portrait.jpg);
+     width: 486px;
+     height: 486px;
+     background-size: cover;
+     border-radius: 50%;
+    }
+    .middle__p1{
+      display: flex;
+      justify-content: center;
+      width: 501px;
+      min-height: 86px;
+      margin: 20px 0px 0px;
+      font-size: 18px;
+    }
+    .middle__div{
+      padding-left: 70px;
+    }
+    .middle__h5{
+      font-size: 20px;
+      margin: 20px 418px 0px 0px;
+    }
+    .middle__h3{
+      font-size: 36px;
+      margin: 20px 308px 0px 0px;
+      font-weight: 300;
+    }
+    .middle__p2{
+      font-size: 18px;
+      margin: 20px 308px 0px 0px;
+    }
+    .middle__a{
+      color: #833DE7;
+      cursor: pointer;
+    }
+    // middle section end
+    

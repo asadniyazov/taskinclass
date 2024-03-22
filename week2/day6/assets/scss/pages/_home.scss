@@ -1,0 +1,110 @@
+// hero section start
+.hero {
+  
+    color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(31, 22, 29, 1)
+    ),
+    url(../img/home-bg.jpg);
+  height: 600px;
+  max-width: 2000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-size: 400;
+}
+.hero__div{
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 12px;
+    letter-spacing: 0.5px;
+}
+// hero section end
+// middle section start
+.middle{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.middle__text{
+    max-width: 637px;
+    border-bottom: 1px solid #dee2e6;
+    min-height: 180px;
+    padding: 0px 24px;
+}
+.middle__a{
+    color: black;
+    &:hover{
+        color: aqua;
+    }
+}
+.middle__div{
+    max-width: 1092px;
+    min-height: 1080px;
+    margin: 0px 30px;
+}
+.middle__h2{
+    margin: 30px 0px 10px;
+    font-size: 32px;
+}
+h3{
+    margin: 0px 0px 10px;
+    font-size: 28px;
+}
+p{
+    margin: 0px 0px 32px;
+}
+.middle{
+    border-bottom: 1px solid #dee2e6;
+    .middle__div{
+        .middle__button__div{
+            text-align: end;
+            padding-top: 20px;
+            .middle__button{
+                width: 179px;
+                height: 55px;
+                background-color: #0085A1;
+                border:none;
+                padding: 20px;
+                color: WHITE;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .middle{
+    .middle__div{
+        .middle__button__div{
+            display: flex;
+            justify-content: end;
+            padding-top: 20px;
+            .middle__button{
+                width: 179px;
+                height: 55px;
+                background-color: #0085A1;
+                border:none;
+                padding: 20px;
+                color: WHITE;
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
+}
+// middle section end

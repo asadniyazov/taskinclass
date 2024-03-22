@@ -1,0 +1,63 @@
+//hero section start  
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(245, 246, 252, 0.42),
+      rgb(31, 22, 29, 0.43)
+    ),
+    url(https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg);
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__div{
+    
+    margin: 0px 24px;
+    text-align: center;
+}
+h1{ font-weight: 800;
+    font-size: 5rem;
+    margin: 0px 0px 8px ;
+}
+span{
+    font-size: 24px;
+    margin: 10px 0px 0px;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+// hero section end
+// middle section start 
+.middle{
+  display: flex;
+  padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+min-height: 520px;
+font-size: 20px;
+padding-bottom: 24px;
+border-bottom: 1px solid #dee2e6;
+
+}
+.middle__div{
+  max-width: 500px;
+  min-height: 120px;
+  margin: 0px 70px;
+}
+.middle__p{
+  margin: 32px 0px;
+}
+@media screen and (max-width:800px) {
+  .hero{
+    width:100%
+  }
+  
+}
+// middle section end
