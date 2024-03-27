@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.2;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.nav__container {
+  font-size: 16px;
+  min-height: 56px;
+  background-color: #212529;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 0px;
+  color: aliceblue;
+}
+.nav__container .nav__a {
+  margin-left: 20px;
+  padding: 5px 0px;
+  font-size: 20px;
+}
+.nav__container a {
+  color: aliceblue;
+}
+
+.nav__ul {
+  margin-right: 60px;
+  max-width: 868px;
+}
+.nav__ul ul {
+  display: flex;
+  flex-direction: row;
+}
+.nav__ul li {
+  padding: 10px;
+}
+.nav__ul li a {
+  color: rgba(255, 255, 255, 0.5490196078);
+}
+
+.hidden {
+  display: none;
+  background-color: #212529;
+  height: 30px;
+  width: 70px;
+  color: rgba(255, 255, 255, 0.5490196078);
+  font-size: 10px;
+  padding: 10px 0px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.5490196078);
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.5490196078);
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #212529;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  max-width: 500px;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: #212529;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .hidden {
+    display: block;
+  }
+  .nav__ul {
+    display: none;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  max-width: 1313px;
+  height: 1148px;
+  background-color: white;
+  padding: 48px 0px;
+}
+.contact .contact__container {
+  max-width: 1140px;
+  height: 1052px;
+  margin: 0px 86.5px;
+  padding: 0px 48px;
+  display: flex;
+}
+.contact .contact__container .contact__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1048px;
+  height: 740px;
+  margin: 0px 0px 48px;
+  padding: 48px;
+  background-color: #F8F9Fa;
+}
+.contact .contact__container .contact__div .contact__text {
+  max-width: 948px;
+  min-height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact__container .contact__div .contact__text h2 {
+  max-width: 948px;
+  width: 100%;
+  height: 48px;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.contact .contact__container .contact__div .contact__text p {
+  max-width: 948px;
+  width: 100%;
+  font-size: 20px;
+  min-height: 20px;
+  margin-bottom: 12px;
+}
+.contact .contact__container .contact__div .contact__text .contact__icon {
+  width: 50px;
+  height: 50px;
+  background-color: #0d6efd;
+  display: flex;
+  justify-content: center;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+.contact .contact__container .contact__div .contact__text .contact__icon i {
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .contact__container .contact__div .contact__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 20px;
+  max-width: 1500px;
+}
+.contact .contact__container .contact__div .contact__input input {
+  border-radius: 7px;
+  max-width: 1500px;
+  width: 100%;
+  padding: 12px 6px;
+  border: 1px solid black;
+}
+.contact .contact__container .contact__div .contact__input textarea {
+  border-radius: 7px;
+  max-width: 1500px;
+  width: 100%;
+  padding: 12px 6px;
+  border: 1px solid black;
+}
+.contact .contact__container .contact__div .contact__input a {
+  background-color: #0d6efd;
+  border-radius: 6px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F8F9Fa;
+  font-weight: 500;
+}
+
+.footer__div {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+.footer__div .footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__div .footer__container ul {
+  color: aliceblue;
+  display: flex;
+  gap: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.footer__div .footer__text {
+  color: white;
+  padding-right: 100px;
+}
+
+@media screen and (max-width: 1992px) {
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=contact.css.map */

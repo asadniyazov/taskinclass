@@ -1,0 +1,389 @@
+// hero section start
+.hero {
+  background-color: #212529;
+  min-height: 584px;
+  padding: 48px 48px;
+}
+.hero__div {
+  display: flex;
+  margin: 0px 60.5px;
+}
+.hero__text {
+  max-width: 636px;
+  padding: 0px 24px;
+  background-color: #212529;
+  margin: 30px 0px;
+  h1 {
+    color: aliceblue;
+    font-size: 48px;
+    margin: 0px 0px 8px;
+  }
+  p {
+    font-size: 20px;
+    color: #ffffff80;
+    margin: 0px 0px 24px;
+  }
+  .hero__a {
+    a {
+      font-size: 20px;
+      color: #f8f9fa;
+      padding: 8px 24px;
+      max-width: 150px;
+      width: 100%;
+      min-height: 49px;
+    }
+    .hero__btn1 {
+      background-color: #0d6efd;
+      border: none;
+      border-radius: 7px;
+      margin: 0px 16px 0px 0px;
+    }
+    .hero__btn2 {
+      border: 1px solid #f8f9fa;
+      border-radius: 7px;
+      &:hover {
+        background-color: #f8f9fa;
+        color: #212529;
+        transition: 0.4ms;
+      }
+    }
+  }
+}
+.hero__img {
+  padding: 0px 24px;
+  img {
+    border-radius: 7px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .hero__div {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px;
+  }
+  .hero__text {
+    margin: 0px 0px;
+  }
+  .hero__img {
+    display: none;
+  }
+  .hero__a {
+    display: flex;
+    flex-direction: column;
+    .hero__btn2 {
+      margin-top: 10px;
+    }
+  }
+}
+//  hero section end
+// better way section start
+.better__way {
+  padding: 48px 0px;
+  max-width: 1441px;
+  min-height: 540px;
+}
+.better__div {
+  display: flex;
+  max-width: 1320px;
+  min-height: 336px;
+  margin: 48px 37.5px;
+  padding: 0px 48px;
+  font-weight: 400;
+  .better__div__div {
+    max-width: 424px;
+    min-height: 336px;
+    padding: 0px 24px;
+  }
+  .better__box {
+    max-width: 848px;
+    min-height: 336px;
+    .better__row {
+      display: flex;
+    }
+    .better__row1 {
+      max-width: 424px;
+      min-height: 144px;
+      margin: 0px 0px 48px;
+      padding: 0px 24px;
+      line-height: 1.2;
+      h2 {
+        font-size: 32px;
+        max-width: 376px;
+        min-height: 24px;
+        margin: 0px 0px 8px;
+      }
+      .better__icon {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0d6efd;
+        border: none;
+        border-radius: 6px;
+        margin: 0px 0px 16px;
+        i {
+          font-size: 30px;
+          color: #f8f9fa;
+        }
+      }
+    }
+  }
+  .better__row2 {
+    max-width: 424px;
+    min-height: 144px;
+    padding: 0px 24px;
+    line-height: 1.2;
+    h2 {
+      font-size: 32px;
+      max-width: 376px;
+      min-height: 24px;
+      margin: 0px 0px 8px;
+    }
+    .better__icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #0d6efd;
+      border: none;
+      border-radius: 6px;
+      margin: 0px 0px 16px;
+      i {
+        font-size: 30px;
+        color: #f8f9fa;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .better__div {
+    display: flex;
+    flex-direction: column;
+    min-height: 33px;
+    .better__div__div {
+      min-height: 40px;
+      margin: 0px 0px 48px;
+    }
+  }
+
+  .better__box {
+    .better__row {
+      display: flex;
+      flex-direction: column;
+      .better__row1 {
+        max-width: 501px;
+      }
+      .better__row2 {
+        max-width: 501px;
+      }
+      .box3 {
+        margin: 0px 0px 48px;
+        padding: 0px 24px;
+      }
+    }
+  }
+}
+
+// better way section end
+// Pomodoro section start
+.Pomodoro {
+  max-width: 2000px;
+  min-height: 364px;
+  background-color: #f8f9fa;
+  padding: 48px 0px;
+  .Pomodoro__container {
+    display: block;
+    min-height: 172px;
+    padding: 0px 48px;
+    margin: 48px 60.5px;
+    display: flex;
+    justify-content: center;
+
+    .Pomodoro__text1 {
+      display: flex;
+      justify-content: center;
+      max-width: 694px;
+      min-height: 120px;
+      margin: 0px 0px 24px;
+      font-size: 24px;
+      line-height: 1.5;
+      font-weight: 400;
+      text-align: center;
+    }
+    .Pomodoro__text2 {
+      max-width: 694px;
+      min-height: 40px;
+      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
+      .Pomodoro__img {
+        width: 40px;
+        height: 40px;
+        margin: 0px 16px 0px 0px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .Pomodoro__p {
+        font-size: 20px;
+        font-weight: 600;
+        .Pomodoro__span {
+          color: #0d6efd;
+        }
+      }
+    }
+  }
+}
+// Pomodoro section end
+// ourblog section start
+.ourblog {
+  display: flex;
+  flex-direction: column;
+  min-height: 1105px;
+  background-color: white;
+  padding: 48px 0px;
+  .ourblog__container {
+    min-height: 913px;
+    margin: 48px 60.5px;
+    padding: 0px 48px;
+    .ourblog__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 32px;
+        margin: 0px 0px 8px;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        max-width: 518px;
+        font-size: 20px;
+        margin: 0px 0px 48px;
+        color: #6c757d;
+        font-weight: 400;
+      }
+    }
+    .card {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      .card__div {
+        margin: 0px 0px 48px;
+        padding: 0px 48px;
+        max-width: 400px;
+
+        .card__border {
+          border: 1px solid #6c757d;
+          max-width: 300px;
+          height: 450px;
+          border-radius: 6px;
+          .card__text {
+            padding: 30px 30px;
+          }
+        }
+        img {
+          width: 300px;
+          height: 200px;
+          border-radius: 6px;
+        }
+        a {
+          cursor: pointer;
+          div {
+            max-width: 50px;
+            text-align: center;
+            background-color: #0d6efd;
+            border-radius: 6px;
+            margin: 10px 0px;
+          }
+          h5 {
+            font-size: 20px;
+            color: #212529;
+            margin: 10px 0px;
+          }
+          p {
+            max-width: 375px;
+          }
+        }
+      }
+    }
+  }
+}
+.card__column {
+  display: flex;
+  flex-direction: row;
+}
+.ourblog__signup {
+  display: flex;
+  justify-content: center;
+}
+.Sign__up {
+  margin: 48px 0px 0px;
+  padding: 48px;
+  background-color: #0d6efd;
+  width: 1224px;
+  color: #f8f9fa;
+  min-height: 163px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  .signup__text1 {
+    font-size: 28px;
+    min-height: 42px;
+  }
+  .signup__text2 {
+    font-size: 16px;
+    color: #ffffff80;
+    min-height: 24px;
+  }
+  .signup__register {
+    input {
+      border: none;
+      width: 253px;
+      height: 38px;
+      padding: 6px 12px;
+      font-size: 1rem;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    button {
+      width: 80px;
+      height: 38px;
+      background-color: #0d6efd;
+      color: #f8f9fa;
+      border-style: solid;
+      margin: 0px 0px 0px -5px;
+      border-color: #f8f9fa;
+
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-size: 16px;
+      &:hover {
+        background-color: #f8f9fa;
+        color: #212529;
+      }
+    }
+    .register__div {
+      min-height: 21px;
+      font-size: 14px;
+      color: #ffffff80;
+      margin-top: 6px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .card__column {
+    display: flex;
+    flex-direction: column;
+  }
+  .Sign__up {
+    display: flex;
+    flex-direction: column;
+  }
+}
+// ourblog section end

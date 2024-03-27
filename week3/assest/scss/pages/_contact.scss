@@ -1,0 +1,106 @@
+.contact{
+    display: flex;
+    
+    justify-content: center;
+    max-width: 1313px;
+    height: 1148px;
+    background-color: white;
+    padding: 48px 0px;
+    .contact__container{
+        max-width: 1140px;
+        height: 1052px;
+        margin: 0px 86.5px ;
+        padding: 0px 48px;
+        display: flex;
+      
+        .contact__div{
+            display: flex;
+            flex-direction: column;
+            
+            align-items: center;
+            max-width: 1048px;
+            height: 740px;
+            margin: 0px 0px 48px;
+            padding: 48px;
+            background-color: #F8F9Fa;
+            .contact__text{
+                max-width: 948px;
+                min-height: 150px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+             
+                h2{
+                    max-width: 948px;
+                    width: 100%;
+                    height: 48px;
+                    font-size: 40px;
+                    margin-bottom: 8px;
+
+                }
+                p{
+                    max-width: 948px;
+                    width: 100%;
+                    font-size: 20px;
+                    min-height: 20px;
+                    margin-bottom: 12px;
+                }
+                .contact__icon{
+                    width: 50px;
+                    height: 50px;
+                    background-color: #0d6efd;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 6px;
+                    margin-bottom: 6px;
+                    i{
+                        font-size: 30px;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                       
+                    }
+                }
+            }
+            .contact__input{
+                display: flex;
+                flex-direction: column;
+               align-items: center;
+               padding: 0px 20px;
+               gap: 20px;
+               max-width: 1500px;
+               input{
+                border-radius: 7px;
+                max-width: 1500px;
+                width: 100%;
+                padding: 12px 6px;
+                border: 1px solid black;
+               }
+               textarea{
+                border-radius: 7px;
+                max-width: 1500px;
+                width: 100%;
+                padding: 12px 6px;
+                border: 1px solid black;
+               }
+               a{
+                background-color: #0d6efd;
+                border-radius: 6px;
+                width: 200px;
+                height: 50px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #F8F9Fa;
+                font-weight: 500;
+               }
+            }
+           
+        }
+        
+        
+    }
+}

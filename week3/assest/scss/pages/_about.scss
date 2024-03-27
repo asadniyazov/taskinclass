@@ -1,0 +1,220 @@
+.hero {
+  padding: 48px 0px;
+  background-color: white;
+  min-height: 500px;
+  .hero__container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 48px;
+    margin: 48px 60.5px;
+    .hero__div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      max-width: 712px;
+      min-height: 400px;
+      h1 {
+        min-height: 96px;
+        font-size: 40px;
+        text-align: center;
+        margin: 0px 0px 16px;
+      }
+      p {
+        text-align: center;
+        min-height: 120px;
+        font-size: 20px;
+        margin: 0px 0px 24px;
+        color: #6c757d;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        background-color: #0d6dfd;
+        width: 162px;
+        height: 48px;
+        padding: 8px 16px;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+// middle section start
+.middle {
+    display: flex;
+    justify-content: center;
+  padding: 48px 0px;
+  min-height: 464px;
+  background-color: #f8f9fa;
+  .middle__div {
+    padding: 0px 48px;
+    margin: 48px 105px;
+    display: flex;
+    flex-direction: row;
+    .middle__text {
+      max-width: 456px;
+      min-height: 226px;
+      h2 {
+        margin: 0px 0px 12px;
+        font-size: 32px;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        min-height: 108px;
+        color: #6c757d;
+      }
+    }
+    img {
+      max-width: 408px;
+      height: 207px;
+      margin: 0px 30px;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .middle {
+    display: flex;
+    justify-content: center;
+    .middle__div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+// 
+.middle2 {
+    padding: 48px 0px;
+    display: flex;
+    justify-content: center;
+    min-height: 464px;
+    background-color: white;
+    .middle__div2 {
+      padding: 0px 48px;
+      margin: 48px 105px;
+      display: flex;
+      flex-direction: row-reverse;
+      .middle__text {
+        max-width: 456px;
+        min-height: 226px;
+        h2 {
+          margin: 0px 0px 12px;
+          font-size: 32px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          min-height: 108px;
+          color: #6c757d;
+        }
+      }
+      img {
+        max-width: 408px;
+        height: 207px;
+        margin: 0px 30px;
+      }
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .middle2{
+      .middle__div2{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+   
+  }
+//   
+  .ourteam {
+    max-width: 100%;
+    min-height: 594px;
+    background-color: #f8f9fa;
+    .ourteam__container {
+        width: 100%;
+        min-height: 405px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 100px;
+        .ourteam__text {
+            max-width: 1224px;
+            min-height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        
+            h2 {
+                max-width: 100%;
+                min-height: 38px;
+                font-size: 32px;
+                color: #212529;
+                
+        
+            }
+        
+            p {
+                max-width: 100%;
+                min-height: 30px;
+                font-size: 20px;
+               
+                color: #6C757D;
+            }
+        }
+        .ourteam__div {
+            max-width: 1224px;
+            min-height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+        
+        }
+        
+        .ourteam__box {
+            max-width: 270px;
+            min-height: 230px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+          
+            
+        }
+        
+        img {
+            max-width: 170px;
+            min-height: 140px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        
+        h5 {
+            
+            font-size: 20px;
+            color: #212529;
+            max-width: 150px;
+            min-height: 24px;
+        }
+        
+        .ourteam__box__div {
+            max-width: 100%;
+            min-height: 24px;
+            
+            font-size: 16px;
+            color: #6C757D;
+        }
+    }
+}
+@media screen and (max-width:992px) {
+  .ourteam__div{
+    display: flex;
+    flex-direction: column;
+  }
+}
