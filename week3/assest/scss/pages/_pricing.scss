@@ -1,0 +1,127 @@
+.pricing{
+    min-height: 850px;
+    padding: 48px 0px;
+    .pricing__container{
+        padding: 48px 48px;
+        margin: 0px 48px;
+  
+        text-align: center;
+        .pricing__text{
+            margin-bottom: 20px;
+            h1{
+                font-size: 40px;
+                margin: 0px 0px 8px;
+                min-height: 48px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 20px;
+                min-height: 30px;
+                color: #6c757d;
+            }
+        }
+        .pricing__box {
+            max-width: 1224px;
+            min-height: 510px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .pricing__card {
+            width: 375px;
+            min-height: 510px;
+            border: 1px solid grey;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .pricing__head{
+            max-width: 278px;
+            min-height: 22px;
+            font-size: 14px;
+            font-weight: bold;
+           
+            color: #6c757d;
+        }
+        
+        .pricing__span {
+            max-width: 278px;
+            min-height: 68px;
+            font-weight: bolder;
+            .span1{
+                color: #212529;  max-width: 64px; min-height: 75px;
+                font-size: 40px;
+            }
+            .span2{
+                font-size: 16px;
+                color: #6c757d; 
+                max-width: 37px; 
+                min-height: 21px;
+            }
+        
+        }
+        
+        li {
+            max-width: 278px;
+            min-height: 24px;
+            .fa-check{
+                color: #0d6efd; 
+                width: 16px; 
+                height: 16px;
+            }
+            .fa-x{
+                color: #6c757d;
+                 width: 16px; 
+                 height: 16px;
+                 
+            }
+        }
+        
+        
+        
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .pricing__btn {
+            width: 278px;
+            min-height: 37px;
+            background-color: #FFFFFF;
+            border: 1px solid #0d6efd;
+            border-radius: 10px;
+            color: #0d6efd;
+            font-size: 16px;
+            margin-top: 20px;
+            &:hover {
+                cursor: pointer;
+                transition: 1s;
+                background-color: #085ddc;
+                color: #FFFFFF;
+            }
+            
+        }
+        .pricing__btn2{
+            background-color: #0d6efd; 
+            color: #ffffff;
+            width: 278px;
+            min-height: 37px;
+          
+            border: 1px solid #0d6efd;
+            border-radius: 10px;
+           margin-top: 20px;
+            font-size: 16px;
+         }
+        
+       
+    }
+}
