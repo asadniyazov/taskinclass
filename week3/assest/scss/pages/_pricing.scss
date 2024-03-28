@@ -42,7 +42,6 @@
             align-items: center;
             flex-direction: column;
         }
-        
         .pricing__head{
             max-width: 278px;
             min-height: 22px;
@@ -51,13 +50,14 @@
            
             color: #6c757d;
         }
-        
         .pricing__span {
             max-width: 278px;
             min-height: 68px;
             font-weight: bolder;
             .span1{
-                color: #212529;  max-width: 64px; min-height: 75px;
+                color: #212529; 
+                 max-width: 64px; 
+                 min-height: 75px;
                 font-size: 40px;
             }
             .span2{
