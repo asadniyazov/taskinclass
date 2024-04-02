@@ -1,0 +1,135 @@
+1)Javascript proqramlasdirma dilidir . Javascript HTML,CSS den ferqli olaraq bizim yaratdigimiz web sehifeden her hansi bir buttona kliklediyimiz zaman bas verecek deyisiklikler yazilir.
+2)Javascript HTML sehifesine 2 cur qosulur: 1. Internal bu formada javascript de yazacagimiz kodlar <script> </script> teqinin arasina yazilir ve adeten body teqinin bitmesinden  bir evvelki setre yazilir ki , performans cehetden daha yaxsi olsun . 2. External bu zaman ise sehifenin Javascript kodu ayri bir fayla yazilir . ve  bu faylin uzantisi js kimi qeyd olunur . Ve bu fayl html sehifesine body teqinin icine script teqinin src atributuna faylin yerlesdiyi unvan qeyd olunur . Numune: <script src="./script.js"></script>
+3) Javascrip dilinde   deyisenler vardir . Bunlara var, let , const numune gostermek olar . Var en kohne deyisendir . Her hansi bir deyiseni default olaraq cagirdiqda o zaman hemin deyisene avtomatik olaraq  var deyiseni menimsedilir . Ve bu deyisenden   istifade azdir . ve bu deyisen hostinq etmek mumkundur . Daha cox let deyiseninden  istifade olunur . Bundan basqa const  deyiseni de vardir . Adindan gorunduyu kimi bu  deyisende deyisenleri let deyiseninden   ferqli olaraq menimsetdiyimiz reqemi , sozu  deyismek olmaz. Const deyiseninden adeten massivlerin qurulmasinda istifade olunur .
+4) Javascript dilinde datatypes ler vardir : 1.boolean 2.string 3.Number 4.Null 5.Undifiend 
+5) Boolean datatypes false ve true  qiymetlerini alir .
+6) String  datatypes  "" ,'', `` arasinda yerlesen sozleri, cumleleri , ifadeleri gosterir .
+7)  Null ve Undifiend datatypes arasinda ferqler vardir . Null istifadeci terefinden verilen datatypes dir .Undifiend ise browser terefinden verilir .
+8) Sert operatorlarina if , else if , switch, ternary ni numune gostermek olar.
+9)if else if sert operatorunda   sert odenildikde deqiq  emeliyyat  gosterilir . switch de ise 1 den artiq emeliyyat yerine yetirilir.
+10) if ,else if sert operatorlari ilk once if operatorunun moterizenin icerisindeki serti odeyirse { } icerisindeki emeliyyat ve ya emeliyyatlar yerine yetirilir. Odenilmedikde ise ondan sonra gelen else if ve ya else sertini odedikde onlarin {} icerisindeki emeliyyatlari yerine yetirir . Else if , else if sertlerinin hec biri odenmedikde bas veren emeliyyatdir . Sadece If varsa   else nin serti if-in  sertinin tersidir .Numune:
+ if  (eded%2==0) {
+   console.log("cutdu");
+  }
+  else{
+     console.log("tekdi");
+   }
+11)switch sert operatorudur. switch operatorunda deqiq emeliyyat  verilmir .Yazilisi:
+switch(dayOfWeek){
+     case 1:
+        console.log("yanvar");
+         break;
+         case 2:
+             console.log("Monday");
+             break;
+          case 3:    
+            day = "Tuesday";
+      break;
+          case 4:
+           day = "Wednesday";
+            break;
+         case 5:
+            day = "Thursday";
+            break;
+          case 6:
+            day = "Friday";
+           break;
+          case  7:
+           day = "Saturday";
+ }
+12) ternary sert operatoru . Bu sert operatoru if , else if qisaldilmis formasidir . ternary  sert ? emeliyyat1 :emeliyyat2; seklinde yazilir.
+13) Dongu operatorlari for , while , do  while dovr opertorlaridir. 
+14) For dongu opertorudur. Yazilisi:
+for( i=0 ;  i<12; i++){
+  console.log(" Salam ")}
+Burda emeliyyat 12 defe salam sozunu ekrana cixarir .
+15)While dovr operatorunda ise  sert odendikde ise while fiqurlu mortezenin   icindeki emeliyyat davam edir .
+Yazilisi :
+While(a%2===0){
+ console.log("Salam")}
+16) do while bu while tersidi.Burda ilk once do  blogunun icinde daha sonra ise while blogunun icinde sert verilir . Bunun while dan ferqi odurki, bu opertorda sert odenmedikde bele emeliyyat en az bir defe yerine yetirilir
+17)  Dongu operatorlarinda break ve continue  olur . Break dongunun icinde verildikde ondan sonraki kodu oxumur ve dovrden cixir . 
+18) Funksiyalarin istifade meqsedi kod tekrarinin qarsisini alir.Function larin 3 novu vardir: 1.function declaration 2. Exspression function 3. Arrow function
+19) Function Declaration  funksiyasinda funksiyanin adi , parametri ve arqumetri  olur . Numune:
+function check (eded=6) {
+    return eded%2===0
+}
+console.log(check(5));
+Burda check funksiyanin adi , eded funksiyanin parametri , 6 ise funksiyanin arqumentidir. Function Decleraration da hemcinin hostinq de etmek olur.  Yeni biz Function Decleration da istifade etdiyimiz deyiseni funksiyadan sonra ixtiyari bir yerde cagirdiqdada isleyecek.
+20) Exspression Function . Function- un adi olmur . amma parametri ve arqumentleri olur . Numune:
+ let check =function  (eded) {
+    return eded%2===0;
+}
+console.log(check(5))
+21) Arrow Function . Numune:
+let check3 =eded=>{
+    return eded%2===0
+}
+console.log(check3(6));
+eger fuqurlu morterzenin icindeki kod 1 setirden ibaretdirse , onda hemcinin kodu asagidaki kimide yaza bilerik:
+let check3 =eded=> return eded%2===0
+console.log(check3(6))
+22) rest operatoru 
+rest operatoru functionun adindan sonraki mortezenin icinde verilir parametrin yerinde . ...kimi isare olunur .
+Numune:
+function showElement(num,...parms) {
+    console.log(num);
+    console.log(parms);
+}
+showElement(1,4,6,7,99,100)
+23)spread  operator  rest operatoru kimi yazilir .Amma bu operator  kopyalama ucun istifade olunur
+const arr1=[1,2,3,4,5]
+const arr2=[6,7,98,9,10]
+const arr3=[4,5,6,7,8]
+const arr4 =[...arr1,...arr2,...arr3]
+arr1[3]=100
+arr2[2]=200
+arr3[4]=500
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+console.log(arr4);
+24) Array methodlarina length, push() ,pop() , shift() ,unshift (), concat(), at() ve s . methodlari aiddir.
+25) length  methodu  array- in uzunlugunu gostermek ucun istifade olunur.   meselen: 
+const arr=[1,2,3,4,5,6,7,8,9]
+let uzunluq=arr.length 
+console.log(uzunluq)
+ 26) push() methodu vasitesi ile array-in sonuna element elave etmek olar . Numune:
+const arr=[1,2,3,4,5,6,7,8,9]
+arr.push(10)
+Burda 10 arr-e daxil edilir.
+27) pop() methodu vasitesi ile array-in sonundan elementi silir .
+const arr=[1,2,3,4,5,6,7,8,9]
+arr.pop()
+Burda 9 arr-den silinir.
+28)unshift() methodu vasitesi ile array-in evveline element daxil olunur.Numune:
+const arr=[1,2,3,4,5,6,7,8,9]
+arr.unshift(0)
+Burada 0 arr-in evveline elave olunur
+29) shift() methodu vasitesi ile array-in evvelinden element silinir 
+const arr=[1,2,3,4,5,6,7,8,9]
+arr.shift( )
+Burada 1  arr-in evvelinden silinir.
+30) concat() methodu vasitesi ile  yeni bir array yaradaraq o arrayde  iki ve daha cox array-i birlesdirir. 
+const arr1= [1,2,3,4,5];
+const arr2 = [6,7,8,9,10];
+const arr = arr1.concat(arr2);
+Burada arr1 massivinden sonra arr2 massivi elave edir ve onu arr masivine atir 
+----------------------------------------
+const arr1= [1,2,3,4,5];
+const arr2 = [6,7,8,9,10];
+const arr3=[11,12,13,14,15,16];
+const arr = arr1.concat(arr2,arr3);
+31) at() methodu vasitesi ile arrayin daxilinde yerlesen elementleri cagira bilerik , uzerinde emeliyyat apara bilerik . Numune:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.at(2);
+console.log(fruit)
+---------------------------
+Bu methodun yerine sadece olaraq fruits[2] kimi cagira bilerik.
+32) opertorlari 1. menimsetme operatoru (=) 2.toplama operatoru (+) 3.vurma operatoru (*) 4. bolme operatoru(/) 
+
+
+
+
+
+

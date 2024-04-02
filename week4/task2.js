@@ -13,4 +13,4 @@ for (let i = 0; i < sampleNews.length; i++) {
     
 }
 console.log(`noqtelerin sayi  : ${say1}`);
-console.log(`vergullerin sayi : ${say2}`);
+console.log(`vergullerin sayi : ${say2}`)
