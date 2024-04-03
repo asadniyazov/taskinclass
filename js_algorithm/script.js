@@ -1,36 +1,38 @@
 // 1. arr=[23,1,5,3,12,4,9,81,7,11,22,31,6]
 // Verilmiş arrayın cüt ədədlərinin maksimumu ilə tək ədədlərinin minimumunun yerini dəyişən proqram tərtib edin. (custom yaz)
-arr=[23,1,5,3,12,4,9,81,7,11,22,32,6]
+arr=[23,1,5,3,12,4,9,81,7,11,22,31,6]
+let minimal=Infinity
  function minimumOdd() {
-    let minimal=arr[0]
+    
    for (let i = 0; i < arr.length; i++) {
     if (arr[i]%2!==0 && minimal>arr[i]  ) {
-    
-        minimal=i
+        minimal=arr[i]
+        minimalIndex=i
     }
-    
    }
    return minimal
  }   
+ let largest=-Infinity
 function maxsimumEven() {
-    let largest=arr[0]
+    
     for (let i = 0; i < arr.length; i++) {
         if (arr[i]%2===0 && arr[i]>largest ) {
-           largest=i
-           
+           largest=arr[i]
+           largestIndex=i
         }
 }
 return largest
 }
 let max=maxsimumEven()
 let min=minimumOdd()
-function change(max,min ) {      
-    [arr[min], arr[max]] = [arr[max], arr[min]];  
+function change( ) {      
+   arr[minimalIndex]=largest
+   arr[largestIndex]=minimal
     return arr 
 }
 console.log(arr);
 
-console.log(change(max,min));
+console.log(change());
 // 2. var arr = [    { urunAdi: "Beyaz Ekmek", fiyat: 2.5, stok: 100, kategori: "Ekmek" },
 //     { urunAdi: "Süt", fiyat: 3.75, stok: 50, kategori: "Süt ve Süt Ürünleri" },
 //     { urunAdi: "Domates", fiyat: 2.0, stok: 80, kategori: "Meyve ve Sebzeler" },
@@ -59,7 +61,7 @@ function showStok() {
    const arr2=[]
    for (let i = 0; i < arr.length; i++) {
       if (arr[i].stok>50) {
-         arr2.push(arr[i].stok)
+         arr2.push(arr[i])
          
       }
       
@@ -73,7 +75,7 @@ const arr3=[]
 function showfruit(){
  for (let i = 0; i < arr.length; i++) {
    if (arr[i].kategori==="Meyve ve Sebzeler") {
-      arr3.push(arr[i].kategori)
+      arr3.push(arr[i])
    }
    
  }
@@ -86,7 +88,7 @@ function showfruit2(){
    
       for (let i = 0; i < arr.length; i++) {
         if (arr[i].kategori==="Meyve ve Sebzeler" && arr[i].stok>2) {
-           arr4.push(arr[i].kategori)
+           arr4.push(arr[i])
         }
         
       }
